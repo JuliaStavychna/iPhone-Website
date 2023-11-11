@@ -263,7 +263,8 @@ body {
     position: relative;
     z-index: 50;
   }
-  .logo, .phone {
+  .logo,
+  .phone {
     position: relative;
     z-index: 50;
   }
@@ -273,7 +274,7 @@ body {
     width: 100%;
     background-color: #fff;
     height: 2px;
-    transition: .3s ease;
+    transition: 0.3s ease;
   }
   .btn-line:nth-child(1) {
     top: 0;
@@ -308,7 +309,7 @@ body {
     align-items: center;
     flex-direction: column;
     transform: translateY(-100%);
-    transition: .3s ease;
+    transition: 0.3s ease;
   }
   .menu-open .menu {
     transform: translateY(0%);
@@ -317,14 +318,14 @@ body {
     padding: 50px 0;
     font-size: 56px;
   }
-  .menu-open .btn-line:nth-child(1){
+  .menu-open .btn-line:nth-child(1) {
     transform: scaleX(0);
-  } 
+  }
   .menu-open .btn-line:nth-child(2) {
-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   .menu-open .btn-line:nth-child(3) {
-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   .menu-open .btn-line:nth-child(4) {
     transform: scaleX(0);
@@ -380,6 +381,22 @@ transform: rotate(-45deg);
     padding: 50px 30px;
   }
 }
+
+@media (max-width: 420px) {
+  .phone {
+    flex-basis: auto;
+    margin-top: 50px;
+    order: 3;
+    width: 100%;
+  }
+  .nav{
+    flex-wrap: wrap;
+  }
+  .menu-item{
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 375px) {
   .contact-form {
     padding: 50px 10px;
